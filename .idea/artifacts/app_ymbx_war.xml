@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="app-ymbx:war">
+    <output-path>$PROJECT_DIR$/app-ymbx/target</output-path>
+    <root id="archive" name="springBoot.war">
+      <element id="artifact" artifact-name="app-ymbx:war exploded" />
+    </root>
+  </artifact>
+</component>

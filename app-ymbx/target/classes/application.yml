@@ -1,0 +1,26 @@
+server:
+  port: 80
+spring:
+  profiles:
+    active: dev
+
+  jpa:
+      openInView: false
+      hibernate:
+        naming:
+          strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      database: MYSQL
+      generate-ddl: false
+      properties:
+        jadira:
+          usertype:
+            autoRegisterUserTypes: true
+        hibernate:
+          hbm2ddl:
+            auto: none
+          dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+person:
+  name: jack
+  age: 18
