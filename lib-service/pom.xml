@@ -9,7 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lib-common</artifactId>
+    <artifactId>lib-service</artifactId>
 
+    <dependencies>
+        <!-- 模块依赖 -->
+        <dependency>
+            <groupId>${parent.groupId}</groupId>
+            <artifactId>lib-common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
