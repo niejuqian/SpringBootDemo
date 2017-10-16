@@ -11,5 +11,17 @@
 
     <artifactId>lib-common</artifactId>
 
-
+    <dependencies>
+        <!--参数校验 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.4.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.0.Final</version>
+        </dependency>
+    </dependencies>
 </project>

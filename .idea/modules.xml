@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBootDemo.iml" filepath="$PROJECT_DIR$/.idea/SpringBootDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-laonie/app-laonie.iml" filepath="$PROJECT_DIR$/app-laonie/app-laonie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-common/lib-common.iml" filepath="$PROJECT_DIR$/lib-common/lib-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-service/lib-service.iml" filepath="$PROJECT_DIR$/lib-service/lib-service.iml" />
+    </modules>
+  </component>
+</project>
