@@ -20,7 +20,11 @@ spring:
             auto: none
           dialect: org.hibernate.dialect.MySQL5Dialect
 
-
+  rabbitmq:
+    host: 116.62.193.96
+    port: 5672
+    publisher-confirms: true
+    virtual-host: /
 person:
   name: jack
   age: 18

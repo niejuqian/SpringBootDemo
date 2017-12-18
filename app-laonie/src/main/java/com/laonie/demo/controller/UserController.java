@@ -1,5 +1,6 @@
 package com.laonie.demo.controller;
 
+import com.laonie.demo.mq.HelloSender1;
 import com.laonie.demo.service.dto.UserDto;
 import com.laonie.demo.service.entity.UserEntity;
 import com.laonie.demo.service.service.IUserService;
@@ -25,6 +26,8 @@ public class UserController {
 
     @Autowired
     private IUserService userService;
+    @Autowired
+    private HelloSender1 helloSender1;
 
 
     @ApiOperation(value = "查询用户信息",notes = "传入用户手机号码")
@@ -43,6 +46,13 @@ public class UserController {
         if (result.hasErrors()) {
             throw new RuntimeException(result.getAllErrors().get(0).getDefaultMessage());
         }
+        return null;
+    }
+
+    @ApiOperation(value = "MQ测试")
+    @GetMapping("/test/mq")
+    public Object testMq(){
+        helloSender1.send();
         return null;
     }
 }

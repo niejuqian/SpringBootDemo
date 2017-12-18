@@ -11,6 +11,12 @@ spring:
   jpa:
     show-sql: true
 
+  rabbitmq:
+    host: 116.62.193.96
+    port: 5672
+    publisher-confirms: true
+    virtual-host: /
+
 person:
   name: devid
   age: 20
